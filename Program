@@ -1,0 +1,13 @@
+values = (2,1,0.5,0.2,0.1,0.02,0.01)
+currency = (" x £2"," x £1"," x 50p"," x 20p"," x 10p"," x 2p"," x 1p")
+total = input("Enter the total amount of change due £")
+x = float(total)
+j = 0
+
+while j < len(values):
+    out = x//values[j]
+    print(out, currency[j])
+    x = x % values[j]
+    j +=1
+
+#finished in 10 minutes 34 seconds
